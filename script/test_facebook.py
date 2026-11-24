@@ -5,7 +5,7 @@ from decouple import config
 def test_text_post():
     """Test posting text-only content to Facebook"""
     page_id = config('FACEBOOK_PAGE_ID')
-    access_token = "EAAGyZCdjiiZBoBO3Am4r0fQPVbUZBDAwWLM04zloU8o1hZAlwtRYhyQ4zqkX60jl0Iz6uwtRS0KJwoYReZBlAJGlVejFK3Tom4nxZBcf0YIfTtMZCxMjbFwF8KTNIpn6iP7uDZCToztJStgqrl6OFoPCJ9Cb0Y26F0dmypsPHKFyDhMRye7wQA8epyMi8y8E80AZB7aiacbKreK8Oeu9I2EPp5YxTe9ZByF3CGXdQYsafcXUHKZB0jXzJTQZAbwZD"
+    access_token = config('FACEBOOK_ACCESS_TOKEN')
     
     url = f"https://graph.facebook.com/v23.0/{page_id}/feed"
     
